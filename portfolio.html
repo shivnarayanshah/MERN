@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <style>
+      body {
+        background-color: #111;
+      }
+      .mainContainer {
+        position: fixed;
+        height: 200%;
+        width: 100%;
+        transform: rotate(-15deg);
+        left: -83%;
+        top: -50%;
+        background: #ffb400;
+      }
+      .imgContainer {
+        width: 100%;
+        position: relative;
+        height: calc(100vh - 80px);
+
+        border-radius: 30px;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+      }
+      .contentContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        margin-left: 40px;
+      }
+      .menuList {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .menuList a {
+        text-align: right;
+        margin-right: 10px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        margin: 40px 10px;
+      }
+      .menuList a:hover {
+        color: #ffb400;
+      }
+      .button:hover {
+        background-color: #ffb400;
+      }
+      .button {
+        height: 50px;
+        padding: 0px 25px;
+        border-color: #ffb400;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainContainer"></div>
+
+    <div class="container-fluid">
+      <div class="row contentContainer">
+        <div class="col-5">
+          <img
+            class="imgContainer"
+            src="https://plus.unsplash.com/premium_photo-1675603849825-483711b5e3a7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+        </div>
+        <div class="col-5">
+          <h1 style="color: #ffb400; text-align: center">
+            I'M SHIV NARAYAN SHAH.
+          </h1>
+          <h1 style="color: white; text-align: center">MERNSTACK DEVELOPER</h1>
+          <br />
+          <p style="color: white; text-align: start">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            aspernatur quo obcaecati repellendus officiis, vitae tempore nihil
+            veritatis veniam totam incidunt rem blanditiis voluptate deleniti.
+            Ea vero alias odio consequatur.
+          </p>
+          <br />
+          <button class="btn btn-success button">
+            <a href="" style="color: white; text-decoration: none"
+              >MORE ABOUT ME
+            </a>
+          </button>
+        </div>
+        <div class="col-2 menu" style="color: white">
+          <ul>
+            <li class="menuList">
+              <a href="">Home</a>
+              <a href="">About</a>
+              <a href="">Portfolio</a>
+              <a href="">Blog</a>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

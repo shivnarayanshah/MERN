@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.container{
+    height: 300px;
+    width: 700px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    
+}
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+#box1{
+    background-color: purple;
+}
+#box2{
+    background-color: green;
+}
+#box3{
+    background-color: yellow;
+}
+#box4{
+    background-color: blue;
+}
+#box5{
+    background-color: brown;
+}
