@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circular Loader</title>
+    <style>
+      div {
+        height: 200px;
+        width: 200px;
+        border: 15px solid yellow;
+        border-top: 15px solid purple;
+        border-radius: 50%;
+        animation: spinAnimation 2s ease-in-out 0ms infinite normal;
+      }
+      @keyframes spinAnimation {
+        from {
+          rotate: 0deg;
+        }
+        to {
+          rotate: 360deg;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+  </body>
+</html>

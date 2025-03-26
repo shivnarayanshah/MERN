@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+    }
+    .box {
+      height: 400px;
+      width: 1000px;
+      border: 1px solid black;
+      display: flex;
+    }
+    .innerbox {
+      width: 200px;
+      border: 1px solid black;
+      margin: 20px;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .content {
+      margin-left: 20px;
+    }
+    button {
+      margin-left: 20px;
+    }
+    .price {
+      text-decoration: line-through;
+    }
+    .button {
+      height: 30px;
+      width: 80%;
+      background-color: green;
+      border-radius: 10px;
+      border-style: none;
+      align-self: center;
+      color: white;
+      box-shadow: 1px 1px 6px 0px black;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <div class="innerbox">
+        <img
+          src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=2043&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+
+        <div class="content">
+          <h2>Flying Ninza</h2>
+          <span>$500</span>
+          <span>$300</span>
+        </div>
+        <div class="btn">
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="innerbox">
+        <img
+          src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=2043&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <div class="content">
+          <h2>Flying Ninza</h2>
+          <br />
+          <span class="price"> price :$500</span>
+          <br />
+          <span class="actual-price">price: $300</span>
+        </div>
+        <br />
+        <div class="btn">
+          <button class="button">Add to Cart</button>
+        </div>
+      </div>
+      <div class="innerbox">
+        <img
+          src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=2043&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <div class="content">
+          <h2>Flying Ninza</h2>
+
+          <span>$500</span>
+          <span>$300</span>
+        </div>
+        <div class="btn">
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="innerbox">
+        <img
+          src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=2043&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <div class="content">
+          <h2>Flying Ninza</h2>
+
+          <span>$500</span>
+          <span>$300</span>
+        </div>
+        <div class="btn">
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box translate</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+    }
+    div {
+      height: 200px;
+      width: 200px;
+      background-color: aqua;
+      animation: ani 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0ms infinite normal;
+      position: absolute;
+    }
+    @keyframes ani {
+      0% {
+        top: 0px;
+        left: 0%;
+      }
+      25% {
+        top: 0%;
+        left: 250px;
+      }
+      50% {
+        top: 250px;
+        left: 250px;
+      }
+      75% {
+        top: 250px;
+        left: 0px;
+      }
+      100% {
+        top: 0px;
+        left: 0px;
+      }
+    }
+  </style>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
