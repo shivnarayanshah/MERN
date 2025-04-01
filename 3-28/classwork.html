@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>classwork</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      .container {
+        width: 800px;
+        height: 400px;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(3, 100px);
+        gap: 10px;
+      }
+      .box1 {
+        background-color: red;
+        grid-row: span 3;
+      }
+      .box2 {
+        background-color: green;
+        grid-column: span 2;
+      }
+      .box3 {
+        background-color: violet;
+      }
+      .box4 {
+        background-color: purple;
+      }
+      .box5 {
+        background-color: yellow;
+      }
+      .box6 {
+        background-color: aqua;
+        grid-row: span 2;
+      }
+      .box7 {
+        background-color: brown;
+      }
+      .box8 {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">
+        <h3>box1</h3>
+      </div>
+      <div class="box2">
+        <h3>box2</h3>
+      </div>
+      <div class="box3">
+        <h3>box 3</h3>
+      </div>
+      <div class="box4">
+        <h3>box4</h3>
+      </div>
+      <div class="box5">
+        <h3>box5</h3>
+      </div>
+      <div class="box6">
+        <h3>box6</h3>
+      </div>
+      <div class="box7">
+        <h3>box7</h3>
+      </div>
+      <div class="box8">
+        <h3>box8</h3>
+      </div>
+    </div>
+  </body>
+</html>

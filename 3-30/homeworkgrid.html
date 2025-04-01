@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid homework</title>
+    <style>
+      * {
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 20px;
+      }
+      .container {
+        /* height: 400px; */
+        /* width: 900px; */
+        /* background-color: purple; */
+        border: 1px solid black;
+        display: grid;
+        grid-template-areas:
+          "header header header header header"
+          "nav main main aside aside"
+          "nav main main aside aside"
+          "nav main main aside aside"
+          "nav main main aside aside"
+          "nav main main aside aside"
+          "footer footer footer footer footer";
+        grid-template-rows: repeat(7, 50px);
+        gap: 5px;
+      }
+      @media (max-width: 768px) {
+        .container {
+          grid-template-areas:
+            "header header header"
+            "nav main main"
+            "nav main main"
+            "nav aside aside"
+            "nav aside aside"
+            "footer footer footer";
+
+          grid-template-rows: repeat(6, 50px);
+        }
+      }
+      @media (max-width: 640px) {
+        .container {
+          grid-template-areas:
+            "header "
+            "nav"
+            "main"
+            "main"
+            "aside"
+            "aside"
+            "aside"
+            "footer";
+
+          grid-template-rows: repeat(8, 50px);
+        }
+      }
+      .box1 {
+        background-color: #62defd;
+        grid-area: header;
+      }
+      .box2 {
+        background-color: #499dfe;
+        grid-area: nav;
+      }
+      .box3 {
+        background-color: #c0a4ff;
+        grid-area: main;
+      }
+      .box4 {
+        background-color: #cc5af7;
+        grid-area: aside;
+      }
+      .box5 {
+        background-color: #fe7964;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1"><h2>Header</h2></div>
+      <div class="box2"><h2>Nav</h2></div>
+      <div class="box3"><h2>Main</h2></div>
+      <div class="box4"><h2>Aside</h2></div>
+      <div class="box5"><h2>Footer</h2></div>
+    </div>
+  </body>
+</html>

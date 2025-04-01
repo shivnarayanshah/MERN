@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 20px;
+      }
+      .box {
+        max-width: 600px;
+        min-height: 700px;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-rows: 100px 50px 30px; */
+        /* justify-content: center; */
+        /* place-content: center; */
+      }
+
+      .item1 {
+        background-color: red;
+      }
+
+      .item2 {
+        background-color: purple;
+      }
+
+      .item3 {
+        background-color: green;
+      }
+
+      .item4 {
+        background-color: silver;
+      }
+
+      .item5 {
+        background-color: yellow;
+      }
+
+      .item6 {
+        background-color: brown;
+      }
+
+      .item7 {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="item item1">
+        <h3>Box1</h3>
+      </div>
+      <div class="item item2">
+        <h3>Box2</h3>
+      </div>
+      <div class="item item3">
+        <h3>Box3</h3>
+      </div>
+      <div class="item item4">
+        <h3>Box4</h3>
+      </div>
+      <div class="item item5">
+        <h3>Box5</h3>
+      </div>
+      <div class="item item6">
+        <h3>Box6</h3>
+      </div>
+      <div class="item item7">
+        <h3>Box7</h3>
+      </div>
+    </div>
+  </body>
+</html>
